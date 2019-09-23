@@ -1,0 +1,22 @@
+{
+  "name": "advanced-css",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sammyloto/advanced-css.git"
+  },
+  "author": "sam",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sammyloto/advanced-css/issues"
+  },
+  "homepage": "https://github.com/sammyloto/advanced-css#readme",
+  "dependencies": {
+    "fetch": "^1.1.0"
+  }
+}
