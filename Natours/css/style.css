@@ -1,9 +1,62 @@
-/**/
+/*universal selector*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 body{
-    font-family: "Lato",sans-serif; 
+    font-family: "Lato",sans-serif; /*we declare font here so that its inherited by all child elements*/
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7; /*1.7 times bigger than the predefined height*/
+    color:  #777;
+    padding: 30px;/*applied to entire webpage*/
+}
+.header{
+    height: 95vh; /*at any pont the height of this element shoukld be 95% of the viewport height*/
+    background-image: linear-gradient(
+        to right bottom, 
+        rgba(125, 216, 110, 0.8), 
+        rgba(40,  180, 133, 0.8)), 
+    url('../img/hero.jpg'); /*gradient fades towards right bottom corner*/
+    background-size: cover; /*cover will always try to fit an el inside of the box*/
+    background-position: top; /*will focus on top of the image when zooming in/out*/
+    position: relative;
+
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+}
+
+.logo-box{
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+
+.logo{
+    height: 35px;
+}
+
+.text-box{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.heading-primary{
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.heading-primary-main{
+    display: block;
+    font-size: 60px;
+    font-weight: 400;
+    letter-spacing: 35px;
+}
+.heading-primary-sub{
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 17.4px;
 }
